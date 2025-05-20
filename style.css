@@ -23,6 +23,7 @@ body {
 }
 .biografi {
     padding-top: 1rem;
+    width: 109rem;
     color: white;
     padding-bottom: 0;
     border: 2px solid white;
@@ -105,12 +106,9 @@ header h1 {
     margin-top: 0.5rem;
 }
 .biografi p {
-    font-size: 1.1rem;
-    margin: 3rem 2rem 4rem 0;
+    font-size: 2rem;
+    text-align: center;
 }
 .sosial a{
     margin: 0 1.5rem 0 0;
-}
-.tools{
-    margin-left: 15rem;
 }
