@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 75%;
+    scroll-padding-top: 8rem;
+    text-decoration: none;
+    list-style: none;
+}
+* {
+    box-sizing: content-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    background-image: url('/asset/bg_pokemon.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.icon {
+    width: 150px;
+    display: block;
+    border-radius: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    text-align: center;
+    color: white;
+    padding: 3rem;
+}
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3 ease-in-out;
+}
+nav {
+    list-style: none;
+    display: flex;
+    font-weight: 200;
+    padding: 1rem 0;
+    border: 1px white solid;
+    margin: 0;
+    box-shadow: 0 0 15px white;
+    justify-content: space-around;
+    color: white;
+    position: sticky;
+    transition: 0.3 ease-in-out;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+nav :hover {
+    transform: scale(1.1);
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+}
+main {
+    flex: 1;
+    display: flex;
+    padding: 2rem;
+}
+footer {
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    color: white;
+}
+header h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
