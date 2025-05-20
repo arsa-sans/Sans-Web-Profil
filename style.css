@@ -12,16 +12,21 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1;
-    background-color: white;
-    color: black;
+    background-image: url('asset/backround.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
     margin: 0;
     padding: 0;
 }
 .biografi {
     padding-top: 1rem;
-    background-color: black;
     color: white;
     padding-bottom: 0;
+    border: 2px solid white;
+    box-shadow: 0 0 15px white;
 }
 .biodata {
     padding: 1rem 5rem 2rem 1rem;
@@ -35,7 +40,6 @@ body {
 }
 header {
     text-align: center;
-    background-color: black;
     color: white;
     padding: 3rem;
 }
@@ -47,7 +51,6 @@ nav a {
 }
 nav {
     list-style: none;
-    background-color: black;
     display: flex;
     font-weight: 200;
     padding: 1rem 0;
@@ -83,32 +86,7 @@ footer {
     align-items: center;
     justify-content: center;
     line-height: 0;
-    background-color: black;
     color: white;
-}
-#projek {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem 3rem 1rem;
-    width: 75%;
-    border-radius: 10px;
-    color: black;
-    background-color: white;
-    margin-left: 4rem;
-}
-#projek p {
-    text-align: justify;
-    padding-right: 28rem;
-}
-#projek img {
-    width: 700px;
-}
-#projek h3 {
-    margin: 2rem 2rem;
-}
-#projek a{
-    color: black;
-    font-size: 1.2rem;
 }
 h3 {
     margin: 1rme 0;
@@ -132,4 +110,7 @@ header h1 {
 }
 .sosial a{
     margin: 0 1.5rem 0 0;
+}
+.tools{
+    margin-left: 15rem;
 }
