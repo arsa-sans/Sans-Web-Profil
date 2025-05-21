@@ -4,92 +4,158 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sansukoyomi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="/asset/icon.jpg">
+  <link rel="icon" href="/img/icon.jpg">
 </head>
 <body>
   <header>
-    <h1>Welcome to My page</h1>
+    <h1>Welcome to My Page</h1>
   </header>
   <nav>
-    <a href="index.html">Profile</a>
-    <a href="/pages/index.html">Project</a>
-    <a href="/pages/pokemon.html">Free API Pokemon</a>
+    <a href="#profile" class="nav-link">Profile</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#pokemon" class="nav-link">Free API Pokemon</a>
   </nav>
+
   <main>
-    <article id="biografi">
-      <section class="biografi">
+    <section id="profile" class="section">
+      <div class="section-header">
         <h2>Profile</h2>
-        <p style="margin-left: 1rem;">👀 About me :</p>
-        <br>
-        <i style="margin-left: 5.5rem;"><b>"just living, not entertaining"</b></i>
-        <br>
-        <br>
-        <br>
-        <img src="/asset/profile.jpg" alt="" class="icon">
-        <div class="biodata">
-          <p>
-            👋 My name is Muhammad Arsa Prayata
-            <br>
-            <br>
-            🤓 Student from SMKN 1 CIANJUR
-            <br>
-            <br>
-            💬 Ask me about: Anime.
-            <br>
-            <br>
-            ⚡ Fun fact I'm funny <b>maybe</b>
-          </p>
-            <div class="tools">
-              <!-- <p align="center"> 
-                <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=arsa-sans" alt="arsa-sans" /></a> 
-              </p> -->
-              <h3 align="center">Languages and Tools:</h3>
-              <p align="center"> 
-
-                <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> 
-                    
-                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> 
-                </a> 
-
-                <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
-                </a> 
-
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> 
-                </a> 
-
-                <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> 
-                </a> 
-              </p>
-              <div class="stat">
-                <p>
-                  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=arsa-sans&theme=midnight-purple&show_icons=true&locale=en&layout=compact" alt="arsa-sans" />
-                </p>
-  
-                <p>&nbsp;
-                  <img src="https://github-readme-stats.vercel.app/api?username=arsa-sans&theme=midnight-purple&show_icons=true&locale=en" alt="arsa-sans" />
-                </p>
-  
-                <p>
-                  <img src="https://github-readme-streak-stats.herokuapp.com/?user=arsa-sans&theme=midnight-purple" alt="arsa-sans" />
-                </p>
-              </div>
-            </div>
-            <section class="sosial">
-              <h3>Contact :</h3>
-              <a href="https://instagram.com/sansukoyomi" target="blank"><img src="/asset/instagram.png" alt="aarrssaa._" height="40" width="40" /></a>
-              <a href="https://github.com/arsa-sans"><img src="/asset/github.png" alt="" height="40" width="40"></a>
-            </section>
+      </div>
+      <div class="profile-content">
+        <p class="about-me">👀 About me :</p>
+        <i class="quote"><b>"just living, not entertaining"</b></i>
+        
+        <div class="profile-grid">
+          <div class="profile-image">
+            <img src="/img/profile.jpg" alt="Profile" class="icon">
+          </div>
+          <div class="biodata">
+            <p>
+              👋 My name is Muhammad Arsa Prayata
+              <br><br>
+              🤓 Student from SMKN 1 CIANJUR
+              <br><br>
+              💬 Ask me about: Anime.
+              <br><br>
+              ⚡ Fun fact I'm funny <b>maybe</b>
+            </p>
+          </div>
         </div>
-      </section>
-    </article>
-    </main>
-    <footer>
-        <p>&copy; 2024 by Muhammad Arsa Prayata</p>
-    </footer>
+
+        <div class="tools">
+          <h3 class="tools-header">Languages and Tools:</h3>
+          <div class="tools-grid">
+            <div class="tool-item">
+              <a href="https://www.w3schools.com/css/">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40">
+              </a>
+            </div>
+            <div class="tool-item">
+              <a href="https://git-scm.com/">
+                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40">
+              </a>
+            </div>
+            <div class="tool-item">
+              <a href="https://www.w3.org/html/">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40">
+              </a>
+            </div>
+            <div class="tool-item">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40">
+              </a>
+            </div>
+            <div class="tool-item">
+              <a href="https://www.python.org">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40">
+              </a>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <img src="https://github-readme-stats.vercel.app/api?username=arsa-sans&theme=midnight-purple&show_icons=true&locale=en" alt="GitHub Stats" class="stat-img">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=arsa-sans&theme=midnight-purple&show_icons=true&locale=en&layout=compact" alt="GitHub Stats" class="stat-img">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=arsa-sans&theme=midnight-purple" alt="arsa-sans" alt="GitHub Stats" class="stat-img">
+          </div>
+        </div>
+
+        <div class="social">
+          <h3>Contact :</h3>
+          <div class="social-links">
+            <a href="https://instagram.com/sansukoyomi" target="blank">
+              <img src="/img/instagram.png" alt="Instagram" height="40" width="40">
+            </a>
+            <a href="https://github.com/arsa-sans">
+              <img src="/img/github.png" alt="GitHub" height="40" width="40">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2>My Projects</h2>
+      </div>
+      
+      <div class="project-grid">
+        <div class="project-item">
+          <h3>Program Kasir Sederhana</h3>
+          <img src="/img/kasir.png" alt="Kasir Project">
+          <p>
+            Program kasir sederhana yang dibuat ini adalah implementasi dari sebuah code aplikasi
+            kasir (Point of Sale atau POS) untuk sebuah kedai kopi. Aplikasi kasir adalah sebuah sistem
+            perangkat lunak yang diguanakan untuk mengelola operasi penjualan di bisnis ritel, termasuk
+            mencatat pesanan, menghitung total tagihan, memproses pembayaran, dan menghasilkan
+            laporan penjualan. <a href="https://github.com/arsa-sans/Sans-projek-kasir">Selengkapnya</a>
+          </p>
+        </div>
+
+        <div class="project-item">
+          <h3>Program ATM Sederhana</h3>
+          <img src="/img/ATM.png" alt="ATM Project">
+          <p>
+            Dalam projek ini saya membuat program ATM sederhana dengan bahasa 
+            pemrograman python GUI tkinter untuk memudahkan user berinteraksi dengan programnya, 
+            Semoga bermanfaat. <a href="https://github.com/arsa-sans/Sans-projek-ATM">Selengkapnya</a>
+          </p>
+        </div>
+
+        <div class="project-item">
+          <h3>Program to-do list sederhana</h3>
+          <div class="project-images">
+            <img src="/img/layar login.png" alt="Todo Login">
+            <img src="/img/layar utama CRUD.png" alt="Todo Main">
+          </div>
+          <p>
+            Diakhir saya jelaskan kegunaan program ini yaitu untuk mengingatkan kita adanya tugas, 
+            dengan bantuan database user anda dapat memisahkan tugas anda dan orang lain. 
+            <a href="https://github.com/arsa-sans/Sans-projek-to-do_list">Selengkapnya</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pokemon" class="section">
+      <div class="section-header">
+        <h2>Pokemon API</h2>
+      </div>
+      
+      <div class="pokemon-content">
+        <a href="https://github.com/arsa-sans/Sans-Web-Profil/tree/Sans-WebProfile/json">
+          <img src="/img/pokeball.png" alt="pokeball" class="pokeball">
+        </a>
+        <p>Click on the pokeball to access Pokemon API resources</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 by Muhammad Arsa Prayata</p>
+  </footer>
 </body>
 </html>
