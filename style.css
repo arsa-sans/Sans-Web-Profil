@@ -1,113 +1,316 @@
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    font-size: 75%;
-    scroll-padding-top: 8rem;
-    text-decoration: none;
-    list-style: none;
-    font-family: Tahoma;
-}
 * {
-    box-sizing: content-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  scroll-padding-top: 4rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
 body {
-    line-height: 1;
-    background-image: url('asset/backround.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    margin: 0;
-    padding: 0;
+  line-height: 1.5;
+  background-color: #121212;
+  background-image: url('/img/bg_pokemon.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
 }
-.biografi {
-    padding-top: 1rem;
-    width: 109rem;
-    color: white;
-    padding-bottom: 0;
-    border: 2px solid white;
-    box-shadow: 0 0 15px white;
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
 }
-.biodata {
-    padding: 1rem 5rem 2rem 1rem;
+
+a:hover {
+  color: #a0a0a0;
 }
-.icon {
-    width: 200px;
-    display: block;
-    border-radius: 70%;
-    margin-left: 4rem;
-}
+
 header {
-    text-align: center;
-    color: white;
-    padding: 3rem;
+  text-align: center;
+  padding: 2rem 1rem;
 }
-nav a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: white;
-    transition: 0.3 ease-in-out;
-}
-nav {
-    list-style: none;
-    display: flex;
-    font-weight: 200;
-    padding: 1rem 0;
-    border: 1px white solid;
-    margin: 0;
-    box-shadow: 0 0 15px white;
-    justify-content: space-around;
-    color: white;
-    position: sticky;
-    transition: 0.3 ease-in-out;
-    z-index: 1000;
-    top: 0;
-    width: 100%;
-}
-nav :hover {
-    transform: scale(1.1);
-    color: rgb(107, 107, 107);
-    font-weight: bold;
-}
-main {
-    flex: 1;
-    display: flex;
-    padding: 2rem;
-}
-footer {
-    display: flex;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10rem;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    line-height: 0;
-    color: white;
-}
-h3 {
-    margin: 1rme 0;
-    font-size: 1.5rem;
-}
-h2 {
-    font-size: 2.5rem;
-    text-align: center;
-}
+
 header h1 {
-    font-size: 4.5rem;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-.biografi p {
-    font-size: 17px;
-    /* text-align: center; */
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid white;
+  box-shadow: 0 0 15px white;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
-.sosial a{
-    margin: 0 1.5rem 0 0;
+
+.nav-link {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
 }
-.stat{
-    text-align: right;
+
+.nav-link:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.section {
+  border: 2px solid white;
+  box-shadow: 0 0 15px white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.about-me {
+  font-size: 1.2rem;
+}
+
+.quote {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.biodata {
+  font-size: 1.1rem;
+}
+
+.tools {
+  margin-top: 2rem;
+}
+
+.tools-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.tool-item {
+  transition: transform 0.3s ease;
+}
+
+.tool-item:hover {
+  transform: scale(1.2);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.stat-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.social {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.project-item {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.project-item h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #f0f0f0;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.project-images {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-item p {
+  text-align: justify;
+  font-size: 0.95rem;
+}
+
+.project-item a {
+  color: #a0a0ff;
+  font-weight: bold;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+
+.pokemon-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pokeball {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.pokeball:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+    
+  .profile-grid {
+    grid-template-columns: auto 1fr;
+  }
+    
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+    
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+    
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+    
+  .profile-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 }
