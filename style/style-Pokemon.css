@@ -83,3 +83,10 @@ header h1 {
     margin-bottom: 1rem;
     margin-top: 0.5rem;
 }
+.pokeball{
+    width: 300px;
+    margin: 5rem 15rem;
+}
+.pokeball:hover{
+    transform: scale(1.1);
+}
